@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="StakeNutriKitchen – Fuel Your Day Right. Nutritious recipes, meal prep guides, and balanced diet inspiration for health-conscious individuals." />
+  <meta name="keywords" content="healthy recipes, meal prep, nutrition, fitness food, balanced diet, high protein meals" />
+  <meta property="og:title" content="StakeNutriKitchen – Fuel Your Day Right" />
+  <meta property="og:type" content="website" />
+  <title>StakeNutriKitchen – Fuel Your Day Right</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<!-- ── NAVBAR ──────────────────────────────────────────── -->
+<nav class="navbar" id="navbar">
+  <div class="nav-wrap">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🥗</div>
+      <div class="nav-logo-text">StakeNutri<span>Kitchen</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="meal-plans.html">Meal Plans</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="recipes.html" class="btn btn-green btn-sm">Explore Recipes</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="nav-mobile" id="navMobile">
+    <a href="index.html">Home</a><a href="recipes.html">Recipes</a><a href="meal-plans.html">Meal Plans</a>
+    <a href="nutrition.html">Nutrition</a><a href="blog.html">Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+    <a href="recipes.html" class="btn btn-green">Explore Recipes</a>
+  </nav>
+</nav>
+
+<!-- ── HERO ────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1800&auto=format&fit=crop&q=85" alt="Colorful healthy food spread" loading="eager" />
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-pill"><span class="hero-pill-dot"></span> Healthy Eating Made Simple</div>
+      <h1>Fuel Your<br /><em>Day Right</em></h1>
+      <p>Nutritious recipes, smart meal plans, and evidence-based nutrition guidance — designed for real lives and busy schedules.</p>
+      <div class="hero-actions">
+        <a href="recipes.html" class="btn btn-green">Explore Recipes →</a>
+        <a href="meal-plans.html" class="btn btn-outline-white">Start Meal Plan</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-count="120" data-suffix="+">0+</div>
+          <div class="hero-stat-lbl">Healthy recipes</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-count="3">0</div>
+          <div class="hero-stat-lbl">Meal plan tracks</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-count="100" data-suffix="% free">0%</div>
+          <div class="hero-stat-lbl">Always free access</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CATEGORIES ──────────────────────────────────────── -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="s-header reveal">
+      <span class="eyebrow">Browse by goal</span>
+      <h2 class="section-h">Find what works for you</h2>
+      <p class="section-p">From high-protein power meals to quick weeknight dinners — we have recipes that fit every lifestyle.</p>
+    </div>
+    <div class="cat-grid stagger">
+      <a href="recipes.html" class="cat-card reveal">
+        <div class="cat-icon">💪</div>
+        <h4>High Protein</h4>
+        <p>Muscle-building meals packed with quality protein sources.</p>
+      </a>
+      <a href="recipes.html" class="cat-card reveal">
+        <div class="cat-icon">🥦</div>
+        <h4>Low Carb</h4>
+        <p>Satisfying recipes that keep your carbs balanced and controlled.</p>
+      </a>
+      <a href="recipes.html" class="cat-card reveal">
+        <div class="cat-icon">🌱</div>
+        <h4>Vegan</h4>
+        <p>Completely plant-based meals that are filling and nutritious.</p>
+      </a>
+      <a href="recipes.html" class="cat-card reveal">
+        <div class="cat-icon">⚡</div>
+        <h4>Quick Meals</h4>
+        <p>Ready in 30 minutes or less — for busy weekdays and meal prep.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── FEATURED RECIPES ────────────────────────────────── -->
+<section class="section bg-warm">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px;" class="reveal">
+      <div>
+        <span class="eyebrow">Editor's picks</span>
+        <h2 class="section-h" style="margin:0;">Featured recipes</h2>
+      </div>
+      <a href="recipes.html" class="btn btn-outline">All recipes</a>
+    </div>
+    <div class="recipes-grid stagger">
+
+      <article class="recipe-card reveal">
+        <div class="recipe-img-wrap">
+          <img class="recipe-img" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&auto=format&fit=crop&q=80" alt="Grilled Chicken Bowl" loading="lazy" />
+          <div class="recipe-badge">High Protein</div>
+        </div>
+        <div class="recipe-body">
+          <div class="recipe-tags"><span class="pill">Protein</span><span class="pill-terra pill">Gluten-Free</span></div>
+          <h3>Grilled Chicken & Quinoa Power Bowl</h3>
+          <div class="recipe-meta">
+            <span>🔥 420 kcal</span>
+            <span>⏱ 25 min</span>
+            <span>👤 2 servings</span>
+          </div>
+          <p style="font-size:0.88rem;margin:0;">Lean grilled chicken over fluffy quinoa with roasted vegetables and a lemon tahini drizzle.</p>
+          <a href="recipes.html" class="btn btn-green btn-sm">View Recipe →</a>
+        </div>
+      </article>
+
+      <article class="recipe-card reveal">
+        <div class="recipe-img-wrap">
+          <img class="recipe-img" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80" alt="Colorful Salad Bowl" loading="lazy" />
+          <div class="recipe-badge">Vegan</div>
+        </div>
+        <div class="recipe-body">
+          <div class="recipe-tags"><span class="pill">Vegan</span><span class="pill-sage pill">Low Calorie</span></div>
+          <h3>Rainbow Chickpea & Avocado Salad</h3>
+          <div class="recipe-meta">
+            <span>🔥 310 kcal</span>
+            <span>⏱ 15 min</span>
+            <span>👤 2 servings</span>
+          </div>
+          <p style="font-size:0.88rem;margin:0;">A vibrant, filling plant-based salad with chickpeas, avocado, cherry tomatoes, and a tahini dressing.</p>
+          <a href="recipes.html" class="btn btn-green btn-sm">View Recipe →</a>
+        </div>
+      </article>
+
+      <article class="recipe-card reveal">
+        <div class="recipe-img-wrap">
+          <img class="recipe-img" src="https://images.unsplash.com/photo-1484723091739-30990f89bd85?w=600&auto=format&fit=crop&q=80" alt="Overnight Oats" loading="lazy" />
+          <div class="recipe-badge">Quick</div>
+        </div>
+        <div class="recipe-body">
+          <div class="recipe-tags"><span class="pill">Vegetarian</span><span class="pill-cream pill">Meal Prep</span></div>
+          <h3>Banana Almond Overnight Oats</h3>
+          <div class="recipe-meta">
+            <span>🔥 380 kcal</span>
+            <span>⏱ 5 min</span>
+            <span>👤 1 serving</span>
+          </div>
+          <p style="font-size:0.88rem;margin:0;">Creamy overnight oats with banana slices, almond butter, and a touch of honey. Prep the night before.</p>
+          <a href="recipes.html" class="btn btn-green btn-sm">View Recipe →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── MEAL PLANS PREVIEW ────────────────────────────────── -->
+<section class="section bg-cream">
+  <div class="container">
+    <div class="s-header reveal">
+      <span class="eyebrow">Structure your eating</span>
+      <h2 class="section-h">Simple meal plan tracks</h2>
+      <p class="section-p">Choose a plan that fits your goal. Each plan is a starting point — adjust to your preferences, activity level, and dietary needs.</p>
+    </div>
+    <div class="meal-plans-grid stagger">
+
+      <div class="plan-card reveal">
+        <div class="plan-header">
+          <h3>🥗 Balanced Diet</h3>
+          <p>For general wellness and sustainable energy</p>
+        </div>
+        <div class="plan-body">
+          <div class="meal-row"><span class="meal-label">Breakfast</span><div><div class="meal-name">Greek Yogurt Parfait</div><div class="meal-cal">~320 kcal</div></div></div>
+          <div class="meal-row"><span class="meal-label">Lunch</span><div><div class="meal-name">Grilled Chicken Wrap</div><div class="meal-cal">~450 kcal</div></div></div>
+          <div class="meal-row"><span class="meal-label">Dinner</span><div><div class="meal-name">Baked Salmon + Veggies</div><div class="meal-cal">~520 kcal</div></div></div>
+          <a href="meal-plans.html" class="link-green" style="margin-top:14px;display:inline-flex;">View full plan →</a>
+        </div>
+      </div>
+
+      <div class="plan-card reveal">
+        <div class="plan-header terra">
+          <h3>💪 Muscle Gain</h3>
+          <p>Higher protein, structured for muscle support</p>
+        </div>
+        <div class="plan-body">
+          <div class="meal-row"><span class="meal-label">Breakfast</span><div><div class="meal-name">Egg White Omelet + Oats</div><div class="meal-cal">~480 kcal</div></div></div>
+          <div class="meal-row"><span class="meal-label">Lunch</span><div><div class="meal-name">Tuna Quinoa Bowl</div><div class="meal-cal">~560 kcal</div></div></div>
+          <div class="meal-row"><span class="meal-label">Dinner</span><div><div class="meal-name">Turkey Stir-Fry + Brown Rice</div><div class="meal-cal">~590 kcal</div></div></div>
+          <a href="meal-plans.html" class="link-green" style="margin-top:14px;display:inline-flex;">View full plan →</a>
+        </div>
+      </div>
+
+      <div class="plan-card reveal">
+        <div class="plan-header sage">
+          <h3>🌿 Weight Management</h3>
+          <p>Calorie-conscious without sacrificing satisfaction</p>
+        </div>
+        <div class="plan-body">
+          <div class="meal-row"><span class="meal-label">Breakfast</span><div><div class="meal-name">Smoothie Bowl</div><div class="meal-cal">~280 kcal</div></div></div>
+          <div class="meal-row"><span class="meal-label">Lunch</span><div><div class="meal-name">Big Green Salad + Lentils</div><div class="meal-cal">~360 kcal</div></div></div>
+          <div class="meal-row"><span class="meal-label">Dinner</span><div><div class="meal-name">Zucchini Noodle Primavera</div><div class="meal-cal">~320 kcal</div></div></div>
+          <a href="meal-plans.html" class="link-green" style="margin-top:14px;display:inline-flex;">View full plan →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── NUTRITION TIPS PREVIEW ────────────────────────────── -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="s-header center reveal">
+      <span class="eyebrow">Nutrition basics</span>
+      <h2 class="section-h">What you need to know</h2>
+      <p class="section-p">Simple, evidence-based nutrition principles to help you make better food choices every day.</p>
+    </div>
+    <div class="macro-grid stagger">
+
+      <div class="macro-card reveal">
+        <div class="macro-icon">🥩</div>
+        <h3>Protein</h3>
+        <p>Essential for muscle repair, immune function, and satiety. Found in meat, eggs, legumes, and dairy.</p>
+        <div class="macro-bar-wrap">
+          <div class="macro-bar-label"><span>Role in diet</span><span>High importance</span></div>
+          <div class="macro-bar"><div class="macro-bar-fill" data-w="88"></div></div>
+        </div>
+        <a href="nutrition.html" class="link-green" style="margin-top:14px;display:inline-flex;">Learn more →</a>
+      </div>
+
+      <div class="macro-card reveal">
+        <div class="macro-icon">🍞</div>
+        <h3>Carbohydrates</h3>
+        <p>Your body's preferred energy source. Choose complex carbs like oats, sweet potato, and whole grains.</p>
+        <div class="macro-bar-wrap">
+          <div class="macro-bar-label"><span>Energy source</span><span>Primary fuel</span></div>
+          <div class="macro-bar"><div class="macro-bar-fill terra" data-w="72"></div></div>
+        </div>
+        <a href="nutrition.html" class="link-green" style="margin-top:14px;display:inline-flex;">Learn more →</a>
+      </div>
+
+      <div class="macro-card reveal">
+        <div class="macro-icon">🥑</div>
+        <h3>Healthy Fats</h3>
+        <p>Essential for hormones, brain health, and absorbing fat-soluble vitamins. Include avocado, nuts, and olive oil.</p>
+        <div class="macro-bar-wrap">
+          <div class="macro-bar-label"><span>Importance</span><span>Essential</span></div>
+          <div class="macro-bar"><div class="macro-bar-fill sage" data-w="64"></div></div>
+        </div>
+        <a href="nutrition.html" class="link-green" style="margin-top:14px;display:inline-flex;">Learn more →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── TESTIMONIALS ─────────────────────────────────────── -->
+<section class="section bg-cream">
+  <div class="container">
+    <div class="s-header center reveal">
+      <span class="eyebrow">Reader stories</span>
+      <h2 class="section-h">What our community says</h2>
+      <p class="section-p">Real feedback from real people — no before/after promises, just honest experiences.</p>
+    </div>
+    <div class="testimonials-grid stagger">
+
+      <div class="t-card reveal">
+        <div class="t-stars">★★★★★</div>
+        <blockquote>"The meal prep guides changed my Sunday routine. I used to spend evenings stressing about meals — now I have healthy options ready to go all week."</blockquote>
+        <div class="t-author">
+          <div class="t-avatar"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&auto=format&fit=crop&q=80" alt="Priya M." loading="lazy" /></div>
+          <div><div class="t-name">Priya M.</div><div class="t-role">Marketing Professional</div></div>
+        </div>
+      </div>
+
+      <div class="t-card reveal">
+        <div class="t-stars">★★★★★</div>
+        <blockquote>"I appreciate that the recipes actually taste good. I've tried other health food sites and the food was boring. These recipes are genuinely enjoyable to cook and eat."</blockquote>
+        <div class="t-author">
+          <div class="t-avatar"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&auto=format&fit=crop&q=80" alt="James T." loading="lazy" /></div>
+          <div><div class="t-name">James T.</div><div class="t-role">Amateur Gym-Goer</div></div>
+        </div>
+      </div>
+
+      <div class="t-card reveal">
+        <div class="t-stars">★★★★☆</div>
+        <blockquote>"The nutrition section helped me understand macros in plain language without the usual confusing jargon. Good starting point for anyone new to paying attention to their diet."</blockquote>
+        <div class="t-author">
+          <div class="t-avatar"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&h=80&auto=format&fit=crop&q=80" alt="Sofia R." loading="lazy" /></div>
+          <div><div class="t-name">Sofia R.</div><div class="t-role">Student & Fitness Beginner</div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── NEWSLETTER ────────────────────────────────────────── -->
+<section class="newsletter-band">
+  <div class="container">
+    <div class="newsletter-inner reveal">
+      <div>
+        <span class="eyebrow">Weekly inspiration</span>
+        <h2 style="font-size:1.9rem;">Fresh recipes in your inbox</h2>
+        <p style="margin-top:8px;">One weekly email with new recipes, nutrition tips, and seasonal meal ideas. No spam.</p>
+      </div>
+      <div>
+        <form class="nl-form" id="nlForm">
+          <input type="email" placeholder="Your email address" required aria-label="Email address" />
+          <button type="submit" class="btn btn-green">Subscribe</button>
+        </form>
+        <p style="font-size:0.78rem;color:var(--ink-faint);margin-top:8px;">See our <a href="privacy-policy.html" style="color:var(--green);">Privacy Policy</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA BAND ──────────────────────────────────────────── -->
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-band-inner reveal">
+      <div>
+        <h2>Ready to start eating better?</h2>
+        <p>Explore our recipe library, pick a meal plan, and start today — all free.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="recipes.html" class="btn btn-white btn-green" style="background:var(--white);color:var(--green);font-weight:700;padding:13px 28px;border-radius:var(--r-sm);font-size:0.93rem;display:inline-flex;align-items:center;gap:7px;transition:var(--t);">Browse Recipes →</a>
+        <a href="meal-plans.html" class="btn btn-outline-white">View Meal Plans</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-icon">🥗</div>
+          <div class="nav-logo-text">StakeNutri<span>Kitchen</span></div>
+        </a>
+        <p>Nutritious recipes and practical meal planning for everyday healthy eating.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="Pinterest">📌</a>
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="Twitter">𝕏</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="meal-plans.html">Meal Plans</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      ⚠️ <strong>Medical Disclaimer:</strong> Content on StakeNutriKitchen is for informational and educational purposes only. It is not intended as medical or nutritional advice. Always consult a qualified healthcare provider or registered dietitian before making significant dietary changes, especially if you have a medical condition.
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 StakeNutriKitchen. All rights reserved.</p>
+      <nav class="footer-legal">
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-conditions.html">Terms</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<button class="btt" id="btt" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

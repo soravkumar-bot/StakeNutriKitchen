@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Structured weekly meal plans for weight management, muscle gain, and balanced eating. Each plan includes breakfast, lunch, and dinner ideas." />
+  <title>Meal Plans – StakeNutriKitchen</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    .week-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; margin-bottom: 40px; overflow-x: auto; }
+    .day-col { min-width: 120px; }
+    .day-header { background: var(--green); color: var(--white); font-size: 0.78rem; font-weight: 700; text-align: center; padding: 8px; border-radius: var(--r-sm) var(--r-sm) 0 0; text-transform: uppercase; letter-spacing: 0.08em; }
+    .day-header.terra { background: var(--terra); }
+    .day-header.sage  { background: var(--sage); }
+    .day-meal { background: var(--white); border: 1px solid var(--cream-dark); border-top: none; padding: 10px; font-size: 0.8rem; color: var(--ink-mid); }
+    .day-meal:last-child { border-radius: 0 0 var(--r-sm) var(--r-sm); }
+    .day-meal-label { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--green); margin-bottom: 3px; }
+    .plan-section { padding: 56px 0; border-bottom: 1px solid var(--cream-dark); }
+    .plan-section:last-child { border-bottom: none; }
+    .plan-intro { display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: center; margin-bottom: 28px; }
+    .plan-chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+    .plan-note { background: var(--green-xs); border: 1px solid var(--green-soft); border-radius: var(--r-sm); padding: 14px 18px; font-size: 0.88rem; margin-top: 20px; }
+    @media(max-width:768px){ .week-grid { display: flex; flex-direction: column; gap: 14px; } .day-col { min-width: auto; } .day-header { border-radius: var(--r-sm) var(--r-sm) 0 0; } }
+    @media(max-width:1024px){ .plan-intro { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-wrap">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-icon">🥗</div><div class="nav-logo-text">StakeNutri<span>Kitchen</span></div></a>
+    <div class="nav-links"><a href="index.html">Home</a><a href="recipes.html">Recipes</a><a href="meal-plans.html">Meal Plans</a><a href="nutrition.html">Nutrition</a><a href="blog.html">Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+    <div class="nav-cta"><a href="recipes.html" class="btn btn-green btn-sm">Explore Recipes</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="nav-mobile" id="navMobile"><a href="index.html">Home</a><a href="recipes.html">Recipes</a><a href="meal-plans.html">Meal Plans</a><a href="nutrition.html">Nutrition</a><a href="blog.html">Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Plan your week</span>
+    <h1>Weekly Meal Plans</h1>
+    <p>Three structured meal plan tracks to get you started — adjust portions, swap meals, and adapt to your schedule. These are starting templates, not medical prescriptions.</p>
+    <div class="footer-disclaimer" style="margin-top:20px;max-width:680px;">⚠️ Calorie estimates are approximate. Individual needs vary based on age, weight, activity level, and health status. Consult a healthcare provider or registered dietitian for personalized advice.</div>
+  </div>
+</header>
+
+<main>
+<div class="container">
+
+  <!-- BALANCED DIET PLAN -->
+  <div class="plan-section">
+    <div class="plan-intro reveal">
+      <div>
+        <span class="eyebrow">Plan 1</span>
+        <h2>🥗 Balanced Diet Plan</h2>
+        <p>Designed for general wellness, sustainable energy, and healthy eating habits. Approximately 1,600–1,900 kcal/day with balanced macronutrients.</p>
+        <div class="plan-chips"><span class="pill">~1,700 kcal/day</span><span class="pill-sage pill">Moderate Protein</span><span class="pill-cream pill">All foods included</span></div>
+      </div>
+      <a href="recipes.html" class="btn btn-outline">Browse Recipes</a>
+    </div>
+
+    <h3 class="reveal" style="margin-bottom:18px;">Sample Week</h3>
+    <div class="week-grid reveal">
+      <div class="day-col"><div class="day-header">Monday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Greek Yogurt + Berries</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Chicken & Veggie Wrap</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Baked Salmon + Salad</div></div>
+      <div class="day-col"><div class="day-header">Tuesday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Overnight Oats</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Lentil Soup + Toast</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Turkey Stir-Fry + Rice</div></div>
+      <div class="day-col"><div class="day-header">Wednesday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Avocado Toast + Egg</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Quinoa Salad</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Chicken Curry + Naan</div></div>
+      <div class="day-col"><div class="day-header">Thursday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Smoothie Bowl</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Tuna Sandwich + Soup</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Veggie Pasta</div></div>
+      <div class="day-col"><div class="day-header">Friday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Banana Pancakes</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Chickpea Bowl</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Grilled Fish + Veg</div></div>
+      <div class="day-col"><div class="day-header">Saturday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Egg & Veggie Omelette</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Big Green Salad</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Lean Beef + Potatoes</div></div>
+      <div class="day-col"><div class="day-header">Sunday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Whole Grain Porridge</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Soup + Crusty Bread</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Roast Chicken + Sides</div></div>
+    </div>
+    <div class="plan-note reveal">💡 <strong>Tip:</strong> Prep your grains and proteins on Sunday to make weekday meals faster. The wrap fillings and quinoa can be stored for up to 4 days.</div>
+  </div>
+
+  <!-- MUSCLE GAIN PLAN -->
+  <div class="plan-section">
+    <div class="plan-intro reveal">
+      <div>
+        <span class="eyebrow">Plan 2</span>
+        <h2>💪 Muscle Support Plan</h2>
+        <p>Higher protein intake structured around workout days. Approximately 2,100–2,500 kcal/day with emphasis on lean protein and complex carbs. Adjust based on your training volume.</p>
+        <div class="plan-chips"><span class="pill-terra pill">~2,300 kcal/day</span><span class="pill">High Protein</span><span class="pill-sage pill">Complex Carbs</span></div>
+      </div>
+      <a href="recipes.html" class="btn btn-outline">Browse Recipes</a>
+    </div>
+
+    <h3 class="reveal" style="margin-bottom:18px;">Sample Week</h3>
+    <div class="week-grid reveal">
+      <div class="day-col"><div class="day-header terra">Monday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Egg White Omelet + Oats</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Tuna Quinoa Bowl</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Chicken Breast + Rice</div></div>
+      <div class="day-col"><div class="day-header terra">Tuesday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Protein Smoothie</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Beef & Veg Stir-Fry</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Salmon + Sweet Potato</div></div>
+      <div class="day-col"><div class="day-header terra">Wednesday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Greek Yogurt + Nuts</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Turkey Wrap + Salad</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Baked Cod + Lentils</div></div>
+      <div class="day-col"><div class="day-header terra">Thursday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Cottage Cheese Bowl</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Chicken Quinoa Bowl</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Lean Mince + Pasta</div></div>
+      <div class="day-col"><div class="day-header terra">Friday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Eggs + Whole Toast</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Prawn Stir-Fry</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Sirloin + Veg</div></div>
+      <div class="day-col"><div class="day-header terra">Saturday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Oat + Protein Pancakes</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Chicken Caesar Salad</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Turkey Burger + Fries</div></div>
+      <div class="day-col"><div class="day-header terra">Sunday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Full Egg Breakfast</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Tuna Rice Bowl</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Roast Chicken + Rice</div></div>
+    </div>
+    <div class="plan-note reveal">💡 <strong>Note:</strong> Protein needs are individual. A common guideline is 1.6–2.2g per kg of body weight for active individuals, but consult a sports dietitian for personalized amounts.</div>
+  </div>
+
+  <!-- WEIGHT MANAGEMENT PLAN -->
+  <div class="plan-section">
+    <div class="plan-intro reveal">
+      <div>
+        <span class="eyebrow">Plan 3</span>
+        <h2>🌿 Weight Management Plan</h2>
+        <p>Lower calorie density with high volume — satisfying meals using vegetables, legumes, and lean proteins. Approximately 1,300–1,600 kcal/day. Not intended as a crash diet.</p>
+        <div class="plan-chips"><span class="pill-sage pill">~1,450 kcal/day</span><span class="pill">High Volume</span><span class="pill-cream pill">High Fiber</span></div>
+      </div>
+      <a href="recipes.html" class="btn btn-outline">Browse Recipes</a>
+    </div>
+
+    <h3 class="reveal" style="margin-bottom:18px;">Sample Week</h3>
+    <div class="week-grid reveal">
+      <div class="day-col"><div class="day-header sage">Monday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Smoothie Bowl</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Big Green Salad + Egg</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Zucchini Noodles</div></div>
+      <div class="day-col"><div class="day-header sage">Tuesday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Poached Eggs on Rye</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Lentil & Veg Soup</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Grilled Fish + Salad</div></div>
+      <div class="day-col"><div class="day-header sage">Wednesday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Berry Greek Yogurt</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Chickpea Salad Wrap</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Chicken + Steamed Veg</div></div>
+      <div class="day-col"><div class="day-header sage">Thursday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Overnight Oats</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Rainbow Veggie Bowl</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Turkey Lettuce Wraps</div></div>
+      <div class="day-col"><div class="day-header sage">Friday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Avocado Toast (1 slice)</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Tomato Lentil Soup</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Cod + Cauliflower</div></div>
+      <div class="day-col"><div class="day-header sage">Saturday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Veggie Scramble</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Niçoise Salad</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Prawn Stir-Fry</div></div>
+      <div class="day-col"><div class="day-header sage">Sunday</div><div class="day-meal"><div class="day-meal-label">Breakfast</div>Fruit & Nut Bowl</div><div class="day-meal"><div class="day-meal-label">Lunch</div>Minestrone Soup</div><div class="day-meal"><div class="day-meal-label">Dinner</div>Baked Chicken + Veg</div></div>
+    </div>
+    <div class="plan-note reveal">💡 <strong>Important:</strong> Weight management is individual. These calorie estimates are a general starting point. Sustainable results come from habits that fit your lifestyle, not restrictive dieting. A registered dietitian can provide personalized guidance.</div>
+  </div>
+
+</div>
+</main>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="index.html" class="nav-logo"><div class="nav-logo-icon">🥗</div><div class="nav-logo-text">StakeNutri<span>Kitchen</span></div></a><p>Nutritious recipes for everyday healthy eating.</p></div><div class="footer-col"><h5>Explore</h5><ul><li><a href="recipes.html">Recipes</a></li><li><a href="meal-plans.html">Meal Plans</a></li><li><a href="nutrition.html">Nutrition</a></li><li><a href="blog.html">Blog</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><h5>Legal</h5><ul><li><a href="privacy-policy.html">Privacy</a></li><li><a href="terms-conditions.html">Terms</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div></div><div class="footer-disclaimer">⚠️ Meal plans are for educational purposes only. Not medical advice. Consult a registered dietitian before starting any structured meal plan.</div><div class="footer-bottom"><p>&copy; 2026 StakeNutriKitchen.</p><nav class="footer-legal"><a href="privacy-policy.html">Privacy</a><a href="terms-conditions.html">Terms</a><a href="disclaimer.html">Disclaimer</a></nav></div></div></footer>
+<button class="btt" id="btt" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
